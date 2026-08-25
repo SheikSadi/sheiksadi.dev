@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheik Sadi Rohmotullah — Backend & GenAI Engineer</title>
+<meta name="description" content="Backend and GenAI engineer building production RAG pipelines, evaluation systems, and cloud infrastructure. Based in Dhaka, headed toward Tokyo.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">SR<span class="dot">.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="resume.pdf" class="btn btn-ghost nav-resume" download>Résumé</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Sheik Sadi Rohmotullah — Backend &amp; GenAI Engineer</p>
+      <h1 class="hero-title">
+        I build the systems<br>
+        AI answers move through.
+      </h1>
+      <p class="hero-sub">
+        Backend-first engineer shipping production RAG pipelines, evaluation harnesses,
+        and cloud infrastructure — currently Acting Head of Engineering at a GenAI SaaS
+        company. Based in Dhaka. Building toward Tokyo.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See the systems</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- SIGNATURE: live pipeline trace -->
+    <div class="trace" role="img" aria-label="Animated diagram of a retrieval-augmented generation request pipeline">
+      <div class="trace-label">
+        <span class="status-dot"></span>
+        <span>request trace — rag.query()</span>
+      </div>
+      <div class="trace-track">
+        <div class="trace-line"></div>
+        <div class="trace-stage" data-ms="14">
+          <span class="stage-node"></span>
+          <span class="stage-name">ingest</span>
+          <span class="ms">—</span>
+        </div>
+        <div class="trace-stage" data-ms="180">
+          <span class="stage-node"></span>
+          <span class="stage-name">embed</span>
+          <span class="ms">—</span>
+        </div>
+        <div class="trace-stage" data-ms="42">
+          <span class="stage-node"></span>
+          <span class="stage-name">retrieve</span>
+          <span class="ms">—</span>
+        </div>
+        <div class="trace-stage" data-ms="11">
+          <span class="stage-node"></span>
+          <span class="stage-name">rerank</span>
+          <span class="ms">—</span>
+        </div>
+        <div class="trace-stage" data-ms="640">
+          <span class="stage-node"></span>
+          <span class="stage-name">generate</span>
+          <span class="ms">—</span>
+        </div>
+        <div class="trace-stage" data-ms="6">
+          <span class="stage-node"></span>
+          <span class="stage-name">verify</span>
+          <span class="ms">—</span>
+        </div>
+        <div class="trace-stage" data-ms="3">
+          <span class="stage-node"></span>
+          <span class="stage-name">respond</span>
+          <span class="ms">—</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="section-inner">
+      <p class="about-text">
+        I'm Sadi — currently Acting Head of Engineering at ELELEM AI, a UK-based GenAI SaaS
+        company, where I own architecture and delivery for two live AI products used by
+        enterprise clients including Sony/SIE. Before taking on that scope I spent two years
+        building the backend myself: RAG pipelines, LLM analytics, and the infrastructure
+        that keeps them running. I care about the unglamorous half of AI engineering —
+        evaluation, quality gates, cost, latency — the work that decides whether a model demo
+        becomes a product people can rely on. I worked a contract role in Tokyo in 2023
+        and have kept up conversational Japanese since. I'm actively looking to go back.
+      </p>
+    </div>
+  </section>
+
+  <!-- SELECTED SYSTEMS -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <p class="section-eyebrow">01 — Selected systems</p>
+      <h2 class="section-title">Things I've shipped to production.</h2>
+
+      <div class="filter-bar" role="tablist" aria-label="Filter systems by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rag">RAG</button>
+        <button class="filter-btn" data-filter="auth">Auth</button>
+        <button class="filter-btn" data-filter="privacy">Privacy</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card" data-tags="rag">
+          <div class="card-top">
+            <h3>Hybrid RAG Engine</h3>
+            <span class="card-metric">100s of queries/day</span>
+          </div>
+          <p>A hybrid-search retrieval engine ("Snippets API") with origin-tracked URL
+            redirection, serving live traffic across 8 enterprise clients from client
+            websites in real time.</p>
+          <ul class="card-tags">
+            <li>FastAPI</li><li>ElasticSearch</li><li>RAG</li>
+          </ul>
+        </article>
+
+        <article class="card" data-tags="auth">
+          <div class="card-top">
+            <h3>Centralized Auth (JWKS)</h3>
+            <span class="card-metric">Zero-downtime key rotation</span>
+          </div>
+          <p>An issuer service minting ES256 JWTs with rotating JWKS, backed by GCP Secret
+            Manager and verified by an in-process caching library across every downstream
+            service.</p>
+          <ul class="card-tags">
+            <li>ES256</li><li>GCP Secret Manager</li><li>Auth</li>
+          </ul>
+        </article>
+
+        <article class="card" data-tags="privacy">
+          <div class="card-top">
+            <h3>PII Redaction Pipeline</h3>
+            <span class="card-metric">Client: Sony / SIE</span>
+          </div>
+          <p>Custom Microsoft Presidio recognizers and a product-specific allow-list scrubbing
+            personally identifiable information from enterprise conversation logs before they
+            reach analytics.</p>
+          <ul class="card-tags">
+            <li>Presidio</li><li>NLP</li><li>Privacy</li>
+          </ul>
+        </article>
+
+        <article class="card" data-tags="analytics">
+          <div class="card-top">
+            <h3>Attribution &amp; Analytics</h3>
+            <span class="card-metric">elelem_cid pipeline</span>
+          </div>
+          <p>A first-party click-ID attribution system connecting widget engagement to
+            backend conversion events, built for enterprise-grade reporting and BigQuery
+            dashboards.</p>
+          <ul class="card-tags">
+            <li>BigQuery</li><li>Cookies</li><li>Analytics</li>
+          </ul>
+        </article>
+
+        <article class="card" data-tags="ml analytics">
+          <div class="card-top">
+            <h3>Recommendation Engine Rebuild</h3>
+            <span class="card-metric">+50% CTA / click-through</span>
+          </div>
+          <p>Re-architected a recommendation engine on sentence embeddings, validated against
+            the incumbent model through a live A/B test on real enterprise traffic.</p>
+          <ul class="card-tags">
+            <li>Embeddings</li><li>A/B Testing</li><li>ML</li>
+          </ul>
+        </article>
+
+        <article class="card" data-tags="rag ml">
+          <div class="card-top">
+            <h3>Benchmarking Pipeline</h3>
+            <span class="card-metric">RAGAS · DeepEval · TruLens</span>
+          </div>
+          <p>An automated report-generation pipeline for evaluating RAG and agentic systems
+            against multiple frameworks, producing ACM-formatted research output.</p>
+          <ul class="card-tags">
+            <li>Evaluation</li><li>RAG</li><li>Automation</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">02 — Track record</p>
+      <h2 class="section-title">Where I've worked.</h2>
+
+      <div class="timeline">
+
+        <div class="tl-row">
+          <span class="tl-date">2026 —</span>
+          <div class="tl-content">
+            <h3>Acting Head of Engineering</h3>
+            <p class="tl-org">ELELEM AI · UK, Remote</p>
+            <p>CTO-level ownership of product and engineering roadmap after the founding
+              CTO's departure. Own architecture, quality, and delivery for two live AI
+              products; lead a 3-engineer team.</p>
+          </div>
+        </div>
+
+        <div class="tl-row">
+          <span class="tl-date">2025–26</span>
+          <div class="tl-content">
+            <h3>Lead Engineer</h3>
+            <p class="tl-org">ELELEM AI</p>
+            <p>Built the Dhaka engineering team from scratch. Owned the full GCP
+              infrastructure stack across two production products.</p>
+          </div>
+        </div>
+
+        <div class="tl-row">
+          <span class="tl-date">2024–25</span>
+          <div class="tl-content">
+            <h3>Software Engineer, Backend</h3>
+            <p class="tl-org">ELELEM AI</p>
+            <p>Built the hybrid-search RAG engine and LLM-based analytics pipelines. Scaled
+              the platform from zero to 8 active enterprise clients.</p>
+          </div>
+        </div>
+
+        <div class="tl-row">
+          <span class="tl-date">2023–24</span>
+          <div class="tl-content">
+            <h3>Back-end Developer</h3>
+            <p class="tl-org">ELELEM AI (formerly CONCURED)</p>
+            <p>Decomposed a monolithic GCP pipeline into independent microservices.
+              Rebuilt the recommendation engine for a 50% lift in CTA/click-through.</p>
+          </div>
+        </div>
+
+        <div class="tl-row">
+          <span class="tl-date">2024</span>
+          <div class="tl-content">
+            <h3>Software Engineer, Backend (Contract)</h3>
+            <p class="tl-org">EBLICT — Bangladesh Ministry of ICT</p>
+            <p>Led backend and ML delivery for a Virtual Private Assistant project across a
+              10-person cross-functional team.</p>
+          </div>
+        </div>
+
+        <div class="tl-row">
+          <span class="tl-date">2023–24</span>
+          <div class="tl-content">
+            <h3>AI Engineer (Contract)</h3>
+            <p class="tl-org">Hiperdyne Corporation — Tokyo, Japan</p>
+            <p>Built a computer-vision face-privacy pipeline. Researched LLM jailbreaking
+              vulnerabilities to inform secure production deployment.</p>
+          </div>
+        </div>
+
+        <div class="tl-row">
+          <span class="tl-date">2022–23</span>
+          <div class="tl-content">
+            <h3>Junior Back-end Developer → NLP Intern</h3>
+            <p class="tl-org">CONCURED</p>
+            <p>Replaced a paid keyword-extraction service with an in-house open-source
+              solution, cutting a recurring monthly cost.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack" id="stack">
+    <div class="section-inner">
+      <p class="section-eyebrow">03 — Stack</p>
+      <h2 class="section-title">What I build with.</h2>
+
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>AI / GenAI</h3>
+          <p class="stack-list">[ LLM production integration ] [ RAG pipelines ] [ LangChain ] [ LangGraph ] [ OpenAI SDK ] [ Anthropic SDK ] [ RAGAS ] [ DeepEval ] [ TruLens ]</p>
+        </div>
+        <div class="stack-group">
+          <h3>Backend</h3>
+          <p class="stack-list">[ Python ] [ FastAPI ] [ Django ] [ Flask ] [ AsyncIO ]</p>
+        </div>
+        <div class="stack-group">
+          <h3>Cloud &amp; Infra</h3>
+          <p class="stack-list">[ GCP — Cloud Run ] [ GKE ] [ Pub/Sub ] [ Cloud Build ] [ AWS ] [ Docker ] [ Kubernetes ] [ GitHub Actions ]</p>
+        </div>
+        <div class="stack-group">
+          <h3>Data</h3>
+          <p class="stack-list">[ MongoDB ] [ ElasticSearch ] [ Redis ] [ BigQuery ] [ MySQL ] [ PostgreSQL ]</p>
+        </div>
+        <div class="stack-group">
+          <h3>ML</h3>
+          <p class="stack-list">[ TensorFlow ] [ PyTorch ] [ ONNX ] [ Pandas ] [ Scikit-Learn ]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="contact" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow">04 — Get in touch</p>
+      <h2 class="section-title">Let's talk.</h2>
+      <p class="contact-sub">
+        Open to senior backend / AI product roles — especially in Tokyo.
+      </p>
+
+      <div class="contact-actions">
+        <button class="btn btn-primary" id="copy-email" data-email="biis.saadi@gmail.com">
+          biis.saadi@gmail.com
+          <span class="copy-icon" aria-hidden="true">⧉</span>
+        </button>
+        <a class="btn btn-ghost" href="https://github.com/SheikSadi" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/sheik-sadi-rohmotullah/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="clocks">
+        <div class="clock">
+          <span class="clock-label">Dhaka</span>
+          <span class="clock-time" id="clock-dhaka">--:--</span>
+        </div>
+        <div class="clock-sep" aria-hidden="true"></div>
+        <div class="clock">
+          <span class="clock-label">Tokyo</span>
+          <span class="clock-time" id="clock-tokyo">--:--</span>
+        </div>
+      </div>
+
+      <p class="footer-meta">Sheik Sadi Rohmotullah — sheiksadi.dev</p>
+    </div>
+  </footer>
+
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
