@@ -46,7 +46,7 @@
 LLM production integration, RAG pipelines, LangChain, LangGraph, OpenAI SDK, Anthropic SDK, RAGAS, DeepEval, TruLens
 
 ### Backend
-Python, FastAPI, Django, Flask, AsyncIO
+Python, FastAPI, Flask, AsyncIO
 
 ### Cloud & Infra
 GCP — Cloud Run, GKE, Pub/Sub, Cloud Build, AWS, Docker, Kubernetes, GitHub Actions

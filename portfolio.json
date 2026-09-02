@@ -94,7 +94,7 @@
     },
     {
       "category": "Backend",
-      "items": ["Python", "FastAPI", "Django", "Flask", "AsyncIO"]
+      "items": ["Python", "FastAPI", "Flask", "AsyncIO"]
     },
     {
       "category": "Cloud & Infra",
