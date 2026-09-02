@@ -1,0 +1,85 @@
+============================================================
+LINKEDIN PROFILE COPY-PASTE GUIDE (From sheiksadi.dev)
+============================================================
+
+--- 1. ABOUT / SUMMARY ---
+Backend and GenAI engineer building production RAG pipelines, evaluation systems, and cloud infrastructure. Currently Acting Head of Engineering at ELELEM AI, a UK-based GenAI SaaS company, owning architecture and delivery for two live AI products used by enterprise clients including Sony/SIE. Based in Dhaka. Building toward Tokyo.
+
+Core Expertise: LLM production integration, RAG pipelines, LangChain, OpenAI/Anthropic SDKs, Python, FastAPI, Django, GCP, AWS, Docker, Kubernetes, ElasticSearch, Redis, BigQuery.
+
+
+--- 2. EXPERIENCE SECTION ---
+
+[1]
+Title: Acting Head of Engineering
+Company: ELELEM AI
+Employment Type: Full-time
+Location Type: Remote / UK
+Start Date: 2026
+Description:
+- CTO-level ownership of product and engineering roadmap after the founding CTO's departure.
+- Own architecture, quality, and delivery for two live AI products; lead a 3-engineer team.
+
+[2]
+Title: Lead Engineer
+Company: ELELEM AI
+Start Date: 2025 | End Date: 2026
+Description:
+- Built the Dhaka engineering team from scratch.
+- Owned the full GCP infrastructure stack across two production products.
+
+[3]
+Title: Software Engineer, Backend
+Company: ELELEM AI
+Start Date: 2024 | End Date: 2025
+Description:
+- Built the hybrid-search RAG engine ("Snippets API") and LLM-based analytics pipelines.
+- Scaled the platform from zero to 8 active enterprise clients.
+
+[4]
+Title: Back-end Developer
+Company: ELELEM AI (formerly CONCURED)
+Start Date: 2023 | End Date: 2024
+Description:
+- Decomposed a monolithic GCP pipeline into independent microservices.
+- Rebuilt the recommendation engine for a 50% lift in CTA/click-through.
+
+[5]
+Title: Software Engineer, Backend (Contract)
+Company: EBLICT — Bangladesh Ministry of ICT
+Start Date: 2024 | End Date: 2024
+Description:
+- Led backend and ML delivery for a Virtual Private Assistant project across a 10-person cross-functional team.
+
+[6]
+Title: AI Engineer (Contract)
+Company: Hiperdyne Corporation
+Location: Tokyo, Japan (Remote/On-site)
+Start Date: 2023 | End Date: 2024
+Description:
+- Built a computer-vision face-privacy pipeline.
+- Researched LLM jailbreaking vulnerabilities to inform secure production deployment.
+
+[7]
+Title: Junior Back-end Developer → NLP Intern
+Company: CONCURED
+Start Date: 2022 | End Date: 2023
+Description:
+- Replaced a paid keyword-extraction service with an in-house open-source solution, cutting recurring monthly costs.
+
+
+--- 3. SKILLS SECTION ---
+- RAG Pipelines
+- Large Language Models (LLMs)
+- Python
+- FastAPI
+- Django
+- Google Cloud Platform (GCP)
+- Amazon Web Services (AWS)
+- Docker
+- Kubernetes
+- Elasticsearch
+- Redis
+- BigQuery
+- PostgreSQL
+- Machine Learning
