@@ -1,15 +1,8 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "sheiksadi-dev",
   "compatibility_date": "2026-08-31",
   "assets": {
-    "directory": ".",
-    "exclude_patterns": [
-      "node_modules/**",
-      ".git/**",
-      "package.json",
-      "package-lock.json",
-      "wrangler.jsonc"
-    ]
+    "directory": "./public"
   }
 }
